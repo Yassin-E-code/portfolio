@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+header{
+   background-color: #0606761f;
+    width: 100%;
+    position : fixed;
+    z-index :999;
+    display: flex;
+    justify-content :space-between ;
+    align-items:center;
+    padding : 10px 150px;
+}
+
+
+.logo{
+    text-decoration: none;
+    color:white;
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+
+}
+.navbar a{
+    
+    text-decoration: none;
+    color:rgba(128, 5, 236, 0.96);
+    text-transform:uppercase;
+   
+    font-weight: 450;
+    padding-left :50px ;
+
+}
+.navbar a:hover{
+    color: #02fb06;
+}
+section{
+  padding: 100px 150px;
+    color: #fff;
+    background: url(hacking-cyber-blackandwhite-crime.jpg )no-repeat;
+    background-size: cover;
+    align-items: center;
+    
+    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    gap: 50px;
+}
+.main{
+    min-height: 100vh;
+    
+    
+}
+.social{
+    
+    align-items: center;
+    gap: 20px;
+    
+    padding : 20px 0;
+
+}
+.social a:hover{
+    color: #02fb06;
+}
+.footer{
+    background-color: #0606761f;
+    width: 100%;
+    position : fixed;
+    z-index :999;
+    display: flex;
+    justify-content :space-between ;
+    align-items:center;
+    padding : 10px 150px;
+}
