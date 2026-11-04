@@ -46,24 +46,37 @@ section{
     
 }
 
-.content{
-    display: flex;
-    align-items: center;
-    padding: 100px 0;
-    gap: 50px;
-}
 .main{
-    min-height: 100vh;
-    
-    
+    min-height: 100vh;  
 }
-.social{
+.main h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color:rgba(128, 5, 236, 0.96);
+    font-weight: 700; 
+}
+.main h3{
+    margin-left: px;
+    padding-top: 45px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+.main p{
+    display: block;
+    margin-left: 25px;
+    padding-top: 45px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+.social a{
     display :inline-block;
-    
     align-items: center;
-    gap: 20px;
+    padding-right : 20px;
     
-    padding : 20px 0;
+    padding-top: 300px;
 
 }
 .social a:hover{
