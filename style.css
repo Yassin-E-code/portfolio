@@ -1,94 +1,70 @@
-*{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    margin: 0;
-}
-header{
-   background-color: #0606761f;
-    width: 100%;
-    position : fixed;
-    z-index :999;
-    display: flex;
-    justify-content :space-between ;
-    align-items:center;
-    padding : 10px 150px;
+
+html {
+  scroll-behavior: smooth;
 }
 
-
-.logo{
-    text-decoration: none;
-    color:white;
-    text-transform:uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-
-}
-.navbar a{
-    
-    text-decoration: none;
-    color:rgba(128, 5, 236, 0.96);
-    text-transform:uppercase;
-   
-    font-weight: 450;
-    padding-left :50px ;
-
-}
-.navbar a:hover{
-    color: #02fb06;
-}
-section{
-  padding: 100px 150px;
-    color: #fff;
-    background: url(hacking-cyber-blackandwhite-crime.jpg )no-repeat;
-    background-size: cover;
-    align-items: center;
-    
-    
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b0714;
+  color: #fff;
 }
 
-.main{
-    min-height: 100vh;  
-}
-.main h2{
-    font-size: 3em;
-    text-transform: uppercase;
-    color:rgba(128, 5, 236, 0.96);
-    font-weight: 700; 
-}
-.main h3{
-    margin-left: px;
-    padding-top: 45px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 700; 
-}
-.main p{
-    display: block;
-    margin-left: 25px;
-    padding-top: 45px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 700; 
+/* Fixed Navbar so it stays at the top while scrolling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(11, 7, 20, 0.95);
+  padding: 20px 0;
+  z-index: 1000;
 }
 
-.social a{
-    display :inline-block;
-    align-items: center;
-    padding-right : 20px;
-    
-    padding-top: 300px;
+.navbar a {
+  color: #a855f7;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
 
+.navbar a:hover {
+  color: #09f705;
 }
-.social a:hover{
-    color: #02fb06;
+.section {
+  min-height: 100vh;
+  padding: 100px 40px 40px 40px; /* Top padding prevents navbar from covering content */
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer{
-    background-color: #0606761f;
-    width: 100%;
-    position : fixed;
-    z-index :999;
-    display: flex;
-    justify-content :space-between ;
-    align-items:center;
-    padding : 10px 150px;
+#home h1, #about h2, #projects h2, #contact h2 {
+  color: #a855f7;
+  margin-bottom: 20px;
+ 
+}
+social {
+  
+  bottom: px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  color: #a855f7;
+}
+i {
+  font-size: 24px;
+  transition: color 0.2s ease;
+}
+.social a:hover i {
+  color: #09f705;
+}
+footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2px;
+  background-color: rgba(11, 7, 20, 0.95);
 }
