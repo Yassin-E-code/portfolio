@@ -48,20 +48,46 @@ body {
 }
 #home p, #about p, #projects p, #contact p {
   color: #fff;
+  background-color: rgba(168, 85, 247, 0.1);                 /* Deep purple-black tint */
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  padding: 6px 14px;
   max-width: 600px;
   line-height: 1.6;
   margin-bottom: 40px;
   margin-left: 20px;
+  border-radius: 10px;
 }
 
+
+
 i {
-  font-size: 24px;
+  font-size: 35px;
   transition: color 0.2s ease;
+  margin-left: 13px;
 }
 .social a:hover i {
   color: #09f705;
 }
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 233;
+}
 
+.tech-stack span {
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  color: #d8b4fe;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.tech-stack span:hover {
+  color: #09f705;
+}
 
 
 footer {
