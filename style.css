@@ -10,21 +10,29 @@ body {
   color: #fff;
 }
 
-/* Fixed Navbar so it stays at the top while scrolling */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0px;
-  width: 100%;
+  width: 130%;
   display: flex;
   justify-content: center;
   gap: 30px;
-  background-color: rgba(11, 7, 20, 0.95);
+  background-color: rgba(20, 11, 39, 0.95);
   padding: 20px 0;
   z-index: 1000;
+ 
+}
+.logo {
+  display: flex;
+  align-items: center;
 }
 
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
 .navbar a {
+  margin-top: auto;
   color: #a855f7;
   text-decoration: none;
   font-weight: bold;
@@ -75,7 +83,14 @@ i {
   margin-top: 30px;
   margin-left: 233;
 }
-
+.navbar a span {
+  display: inline-block;
+  flex-wrap:wrap;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
 .tech-stack span {
   background: rgba(168, 85, 247, 0.1);
   border: 1px solid rgba(168, 85, 247, 0.25);
@@ -85,9 +100,7 @@ i {
   font-size: 0.85rem;
   font-weight: 700;
 }
-.tech-stack span:hover {
-  color: #09f705;
-}
+
 
 
 footer {
