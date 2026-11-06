@@ -22,12 +22,15 @@ body {
  
 }
 .logo {
-  display: flex;
-  align-items: center;
+  position: fixed;
+  left: 20px;
+  top: 10px;
+  z-index: 1001;
 }
 
 .logo img {
-  height: 80px;
+  margin-left: px;
+  height: 50px;
   width: auto;
   display: block;
 }
