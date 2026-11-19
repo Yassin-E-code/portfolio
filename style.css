@@ -8,6 +8,10 @@ body {
   font-family: Arial, sans-serif;
   background-color: #0b0714;
   color: #fff;
+  
+}
+.home{
+  background-image: url(ys-bg.jpg);
 }
 
 .navbar {
@@ -25,7 +29,7 @@ body {
   
   position: fixed;
   left: 20px;
-  top: -6px;;
+  top: -5px;;
   
   box-sizing: border-box;
   border: 1px solid  rgba(168, 85, 247, 0.25);
