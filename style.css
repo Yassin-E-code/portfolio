@@ -7,15 +7,17 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #0b0714;
-  color: #fff;
+  background-image: url(ys-bg.jpg);
+  
+  background-position: center;
   
 }
 .home{
-  background-image: url(ys-bg.jpg);
+  
 }
 
 .navbar {
-  position: fixed;
+ 
   width: 130%;
   display: flex;
   justify-content: center;
@@ -23,7 +25,11 @@ body {
   background-color: rgba(20, 11, 39, 0.95);
   padding: 20px 0;
   z-index: 1000;
- 
+ color: #a855f7;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
 }
 .logo {
   
@@ -38,15 +44,6 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
   
 }
-.navbar a {
-  margin-top: auto;
-  color: #a855f7;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: color 0.2s ease;
-}
-
 .navbar a:hover {
   color: #09f705;
 }
