@@ -38,6 +38,16 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
   
   }
+section {
+  display: flex;
+  background-image: url(ys-bg.jpg);
+  align-items: center;
+  z-index: 1001;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+
+}
 
 
 
