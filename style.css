@@ -22,11 +22,18 @@ body {
  
 }
 .logo {
+  
   position: fixed;
   left: 20px;
-  top: 10px;
-  z-index: 1001;
-}
+  top: -6px;;
+  
+  box-sizing: border-box;
+  border: 1px solid  rgba(168, 85, 247, 0.25);
+  padding: 3px 10px;
+  border-radius: 26px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  
+  }
 
 
 
