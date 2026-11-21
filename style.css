@@ -6,14 +6,8 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color:grey;
-  background-image: url(ys-bg.jpg);
-  
-  background-position: center;
-  
-}
-.home{
-  
+  background-color:rgb(2, 2, 2); 
+  background-position: center; 
 }
 
 .navbar {
@@ -22,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background-color: rgba(20, 11, 39, 0.95);
   padding: 20px 0;
   z-index: 1000;
  color: #a855f7;
@@ -30,19 +23,6 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   transition: color 0.2s ease;
-}
-.logo {
-  
-  position: fixed;
-  left: 20px;
-  top: -5px;;
-  
-  box-sizing: border-box;
-  border: 1px solid  rgba(168, 85, 247, 0.25);
-  padding: 3px 10px;
-  border-radius: 26px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  
 }
 .navbar a:hover {
   color: #09f705;
