@@ -1,102 +1,164 @@
-
-html {
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color:rgb(2, 2, 2); 
-  background-position: center; 
+  background-color: #0b0914; /* Deep dark background */
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Pushes logo left, navbar right */
+  align-items: center;            /* Aligns them neatly in a straight line */
+  padding: 20px 8%;               /* Adds space from the edges of the screen */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logoo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;       /* Set width */
+  height: 50px;      /* Set height to the EXACT same number */
+  border-radius: 50%; /* Makes it a perfect circle */
+  border: 2px solid #7c3aed;
+  background-color: #130f26;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  flex-shrink: 0;    /* Prevents the navbar from squishing it */
 }
 
 .navbar {
- 
-  width: 130%;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px 0;
-  z-index: 1000;
- color: #a855f7;
+  gap: 15px; /* Space between each separate button */
+}
+
+/* Style each individual link as its own separate pill */
+.navbar a {
+  background-color: rgba(19, 15, 38, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 10px 22px;
+  border-radius: 9999px;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  color: #cbd5e1;
   text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: color 0.2s ease;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
 }
+
 .navbar a:hover {
-  color: #09f705;
-}
-.section {
-  min-height: 100vh;
-  padding: 100px 40px 40px 40px; /* Top padding prevents navbar from covering content */
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-#home h1, #about h2, #projects h2, #contact h2 {
   color: #a855f7;
+}
+
+.section {
+  background-color: #130f26;
+  margin: 30px 8%;
+  padding: 60px 50px;
+  border-radius: 30px;
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+#home {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#home h1 {
+  font-size: 3rem;
   margin-bottom: 20px;
- 
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-#home p, #about p, #projects p, #contact p {
-  color: #fff;
-  background-color: rgba(168, 85, 247, 0.1);                 /* Deep purple-black tint */
-  border: 1px solid rgba(168, 85, 247, 0.25);
-  padding: 6px 14px;
-  max-width: 600px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  border-radius: 10px;
+
+.section h2 {
+  font-size: 2rem;
+  color: #a855f7;
+  margin-bottom: 15px;
+}
+
+.section p {
+  max-width: 700px;
+  color: #94a3b8;
+  font-size: 1.05rem;
 }
 
 
-
-i {
-  font-size: 35px;
-  transition: color 0.2s ease;
-  margin-left: 13px;
-}
-.social a:hover i {
-  color: #09f705;
-}
 .tech-stack {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 12px;
   margin-top: 30px;
-  margin-left: 233;
-}
-.navbar a span {
-  display: inline-block;
-  flex-wrap:wrap;
-  border: 1px solid rgba(168, 85, 247, 0.25);
-  padding: 6px 14px;
-  border-radius: 20px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-.tech-stack span {
-  background: rgba(168, 85, 247, 0.1);
-  border: 1px solid rgba(168, 85, 247, 0.25);
-  color: #d8b4fe;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 700;
 }
 
+.tech-stack span {
+  background-color: #1e183b;
+  color: #c4b5fd;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tech-stack span:hover {
+  transform: translateY(-3px);
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #1e183b;
+  color: #e2e8f0;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  transition: all 0.3s ease;
+}
+
+.social a:hover {
+  background-color: #7c3aed;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
 
 
 footer {
+  text-align: center;
+  padding: 40px 8%;
+  color: #64748b;
+  font-size: 0.9rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 20px 40px;
-  background-color: rgba(11, 7, 20, 0.95);
-  box-sizing: border-box;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: flex-end;
+  gap: 10px;
 }
